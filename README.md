@@ -12,6 +12,8 @@ This repo contains code for *CoCo: Coherence-Enhanced Machine-Generated Text Det
 
 * For loading datasets for other usages, we recommend to download the data and using `json.loads()` directly to avoid format errors.
 
+* If want to try some self-made data samples, you can create a new jsonline file following the format: `{"article": <the text>, "label": <"human" or "machine">}` for each entry (1 entry per line).
+
 ## Preprocess
 
 A two-step preprocess for building the coherence graph for the raw dataset is needed before detection (only for CoCo but not other baseline methods).
