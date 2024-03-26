@@ -30,6 +30,14 @@ A new jsonl file named `data/<dataset_name>_kws.jsonl` will be output under the 
 
 The final dataset `data/<dataset_name>_graph.jsonl` will be output under the same path.
 
+For example:
+
+```
+python preprocess/extract_keywords.py --raw_dir data/gpt2/gpt2_500_train.jsonl
+python preprocess/construct_graph.py --kw_file_dir data/gpt2/gpt2_500_train_kws.jsonl
+```
+You need to do all these steps for both training, evaluating, and testing splits if you want to finish a complete training process.
+
 ## Detection
 
 Before running the code, update the dataset path at `run_detector.py#L1415`.
